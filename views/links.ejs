@@ -1,0 +1,10 @@
+<table border="1">
+<tr>
+<th>TEXT</th><th>LINK</th><th>DELETE</th>
+</tr>
+<% for (let item of data) { %>
+    <tr>
+    <td><%- item.linkname %></td><td><a href="<%= item.linkurl %>" target="_blank"><%= item.linkurl %></a></td><td><form method="post"><button type="submit" value="<%= item._id %>" name="delete">削除</button></form></td>
+    </tr>
+<% } %>
+</table>
