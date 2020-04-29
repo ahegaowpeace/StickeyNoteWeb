@@ -87,4 +87,6 @@ admin
 > db.links.insert({ linkname : "夜マオふにゃふにゃ", linkurl : "https://youtu.be/6cbqUl-3xDQ?t=65" });
 ```
 ## memo
-express(Backend)
+- リロード時二重POST送信
+  - トークンで判定する方法がある
+- body-paser
